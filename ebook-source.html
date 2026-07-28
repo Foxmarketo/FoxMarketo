@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600&display=swap');
+:root{--teal:#1C7A8C;--teal-deep:#0E5765;--teal-dark:#0A4956;--red:#D42E2E;--orange:#F2913C;--ink:#16323A;--grey:#5c6b70;}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+body{font-family:'Inter',sans-serif;color:var(--ink);}
+.page{width:816px;height:1056px;position:relative;overflow:hidden;page-break-after:always;background:#fff;}
+.page:last-child{page-break-after:auto;}
+h1,h2,h3,h4{font-family:'Poppins',sans-serif;}
+
+/* COVER */
+.cover{background:linear-gradient(160deg,var(--teal),var(--teal-deep) 55%,var(--teal-dark));color:#fff;padding:70px 60px;display:flex;flex-direction:column;height:1056px;}
+.cover .stripes{position:absolute;top:0;right:0;width:200px;height:260px;background:repeating-linear-gradient(-45deg,var(--red) 0 8px,transparent 8px 20px);opacity:.45;}
+.cover .blob{position:absolute;bottom:-120px;left:-100px;width:340px;height:340px;border-radius:50%;background:rgba(242,145,60,.14);}
+.brandrow{display:flex;align-items:center;gap:12px;position:relative;z-index:2;}
+.brandrow .logo{width:52px;height:40px;}
+.brandrow .name{font-family:'Poppins';font-weight:800;font-size:22px;letter-spacing:.5px;}
+.brandrow .name .o{color:var(--orange);}
+.cover .eyebrow{margin-top:auto;position:relative;z-index:2;font-family:'Poppins';font-weight:600;letter-spacing:4px;font-size:13px;text-transform:uppercase;color:var(--orange);}
+.cover h1{position:relative;z-index:2;font-weight:900;font-size:52px;line-height:1.05;margin-top:16px;}
+.cover h1 span{color:var(--orange);}
+.cover .sub{position:relative;z-index:2;margin-top:22px;font-size:17px;line-height:1.6;color:#d3ebee;max-width:520px;}
+.cover .foot{position:relative;z-index:2;margin-top:auto;padding-top:40px;font-size:14px;color:#a9d0d5;}
+.cover .foot b{color:#fff;font-family:'Poppins';}
+
+/* CONTENT PAGES */
+.content{padding:60px 62px;height:1056px;display:flex;flex-direction:column;}
+.kicker{font-family:'Poppins';font-weight:600;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--red);}
+.content h2{font-weight:800;font-size:32px;color:var(--teal-deep);line-height:1.15;margin:8px 0 20px;}
+.content h2 span{color:var(--red);}
+.content p{font-size:14.5px;line-height:1.7;color:#3c4c52;margin-bottom:14px;}
+.content h3{font-family:'Poppins';font-weight:700;font-size:18px;color:var(--ink);margin:22px 0 8px;}
+.tip{background:#f4fafb;border-left:4px solid var(--teal);border-radius:8px;padding:16px 18px;margin:16px 0;font-size:13.5px;line-height:1.6;color:#2c4048;}
+.tip b{color:var(--teal-deep);font-family:'Poppins';}
+.numbered{display:flex;gap:16px;margin:18px 0;}
+.numbered .n{width:44px;height:44px;flex:none;border-radius:12px;background:var(--teal);color:#fff;font-family:'Poppins';font-weight:800;font-size:20px;display:flex;align-items:center;justify-content:center;}
+.numbered .b h3{margin:0 0 4px;}
+.numbered .b p{margin:0;font-size:13.5px;}
+.pagefoot{margin-top:auto;padding-top:24px;border-top:1px solid #e6eef0;display:flex;justify-content:space-between;font-size:11px;color:#9aa9ad;font-family:'Poppins';}
+.check{display:flex;gap:10px;align-items:flex-start;margin:10px 0;}
+.check .c{width:22px;height:22px;flex:none;border-radius:50%;background:var(--teal);color:#fff;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;}
+.check p{margin:0;font-size:13.5px;}
+
+/* CTA PAGE */
+.ctapage{background:linear-gradient(160deg,var(--teal-deep),var(--teal-dark));color:#fff;padding:80px 62px;height:1056px;display:flex;flex-direction:column;justify-content:center;text-align:center;position:relative;overflow:hidden;}
+.ctapage .blob{position:absolute;top:-100px;right:-100px;width:320px;height:320px;border-radius:50%;background:rgba(242,145,60,.12);}
+.ctapage h2{font-weight:900;font-size:40px;line-height:1.1;position:relative;z-index:2;}
+.ctapage h2 span{color:var(--orange);}
+.ctapage p{font-size:16px;line-height:1.6;color:#d3ebee;margin:20px auto 0;max-width:480px;position:relative;z-index:2;}
+.coupon{position:relative;z-index:2;margin:32px auto 0;background:var(--red);border-radius:16px;padding:24px 40px;display:inline-block;box-shadow:0 12px 30px rgba(212,46,46,.4);}
+.coupon .lbl{font-family:'Poppins';font-weight:600;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#ffd9d9;}
+.coupon .code{font-family:'Poppins';font-weight:900;font-size:34px;letter-spacing:3px;margin-top:4px;}
+.contactline{position:relative;z-index:2;margin-top:40px;font-size:14px;color:#cfe7ea;line-height:1.9;}
+.contactline b{color:#fff;font-family:'Poppins';}
+</style>
+</head>
+<body>
+
+<!-- COVER -->
+<div class="page cover">
+  <div class="stripes"></div><div class="blob"></div>
+  <div class="brandrow">
+    <svg class="logo" viewBox="0 0 120 90"><use href="#fox"/></svg>
+    <span class="name">FOX MARKET<span class="o">O</span></span>
+  </div>
+  <div class="eyebrow">The Free Guide</div>
+  <h1>7 Digital Marketing<br>Moves That <span>Actually<br>Grow Revenue</span></h1>
+  <p class="sub">A practical playbook for founders and business owners who are done guessing, and ready to turn their marketing into real leads and sales.</p>
+  <div class="foot">Brought to you by <b>Fox Marketo</b><br>Where cunning meets the market</div>
+</div>
+
+<!-- PAGE 2: INTRO -->
+<div class="page">
+  <div class="content">
+    <div class="kicker">Introduction</div>
+    <h2>Marketing Shouldn't Feel Like <span>Gambling</span></h2>
+    <p>Most business owners we meet aren't short on effort. They're posting, boosting the odd ad, maybe paying for an SEO tool, and still not seeing the leads they expected. The problem is rarely laziness. It's the lack of a connected system.</p>
+    <p>This short guide lays out seven moves that consistently move the needle for small and mid-sized businesses. None of them require a huge budget. All of them are things our team does every day for clients across health, food, finance, retail, and more.</p>
+    <p>Read it in ten minutes. Apply even three of these ideas, and you'll already be ahead of most of your competitors.</p>
+    <div class="tip"><b>How to use this guide:</b> Don't try to do all seven at once. Pick the one that matches your biggest gap right now, execute it fully for 30 days, then move to the next.</div>
+    <h3>Who this is for</h3>
+    <div class="check"><span class="c">&#10003;</span><p>Business owners tired of doing marketing by trial and error.</p></div>
+    <div class="check"><span class="c">&#10003;</span><p>Brands with an inconsistent or invisible online presence.</p></div>
+    <div class="check"><span class="c">&#10003;</span><p>Founders who want one team handling the whole funnel.</p></div>
+    <div class="pagefoot"><span>FOX MARKETO</span><span>foxmarketo.com</span></div>
+  </div>
+</div>
+
+<!-- PAGE 3: MOVES 1-3 -->
+<div class="page">
+  <div class="content">
+    <div class="kicker">The Playbook</div>
+    <h2>The First Three <span>Moves</span></h2>
+    <div class="numbered"><div class="n">1</div><div class="b"><h3>Fix your foundation before you spend</h3><p>Before running a single ad, make sure your website loads fast, works on mobile, and has one clear call to action per page. Paid traffic to a weak site just burns money.</p></div></div>
+    <div class="numbered"><div class="n">2</div><div class="b"><h3>Own one channel before adding another</h3><p>Spreading thin across five platforms beats no one. Pick the single channel where your buyers actually are, dominate it for 90 days, then expand.</p></div></div>
+    <div class="numbered"><div class="n">3</div><div class="b"><h3>Turn every ad into a measurable test</h3><p>Every campaign should answer a question: which headline, which audience, which offer. Track cost per lead, not just clicks, and kill what doesn't convert quickly.</p></div></div>
+    <div class="tip"><b>Quick win:</b> Add a single, obvious "Get a Quote" or "Book a Call" button to the top of your homepage today. Most sites bury their main action, and it costs them leads.</div>
+    <div class="pagefoot"><span>FOX MARKETO</span><span>foxmarketo.com</span></div>
+  </div>
+</div>
+
+<!-- PAGE 4: MOVES 4-7 -->
+<div class="page">
+  <div class="content">
+    <div class="kicker">The Playbook</div>
+    <h2>The Moves That <span>Compound</span></h2>
+    <div class="numbered"><div class="n">4</div><div class="b"><h3>Show proof, not promises</h3><p>Reviews, testimonials, and real client results outsell clever copy every time. Put social proof on every key page, especially near your buttons.</p></div></div>
+    <div class="numbered"><div class="n">5</div><div class="b"><h3>Repurpose one idea into ten posts</h3><p>One strong video or article can become reels, quotes, carousels, and an email. Content volume without more work is how small teams stay visible.</p></div></div>
+    <div class="numbered"><div class="n">6</div><div class="b"><h3>Follow up automatically</h3><p>Most leads don't buy on day one. A simple email sequence that nurtures new contacts for two weeks recovers sales you're currently losing to silence.</p></div></div>
+    <div class="numbered"><div class="n">7</div><div class="b"><h3>Review the numbers monthly</h3><p>What gets measured gets improved. A short monthly review of traffic, leads, and cost per lead keeps you spending where it works.</p></div></div>
+    <div class="pagefoot"><span>FOX MARKETO</span><span>foxmarketo.com</span></div>
+  </div>
+</div>
+
+<!-- PAGE 5: CTA + COUPON -->
+<div class="page ctapage">
+  <div class="blob"></div>
+  <h2>Want Us To Do This <span>For You?</span></h2>
+  <p>Fox Marketo is a full-stack digital marketing team handling SEO, ads, social, web, and video, so you can focus on running your business. Plans start at $199 a month.</p>
+  <div class="coupon">
+    <div class="lbl">Your exclusive reader discount</div>
+    <div class="code">FOX10</div>
+  </div>
+  <p style="margin-top:18px;font-size:13.5px;">Mention code <b style="color:#fff">FOX10</b> when you sign a contract to claim an extra 10% off your first engagement.</p>
+  <div class="contactline">
+    <b>Book a free strategy call:</b> foxmarketo.com/contact<br>
+    <b>WhatsApp:</b> +92 317 792 8052 &nbsp;&middot;&nbsp; <b>Email:</b> Info.foxmarketo@gmail.com
+  </div>
+</div>
+
+<svg width="0" height="0" style="position:absolute">
+  <symbol id="fox" viewBox="0 0 120 90">
+    <path d="M4 52 C 10 34, 30 24, 52 30 C 40 30, 26 36, 22 48 C 34 40, 48 40, 58 46 C 46 48, 30 52, 22 60 C 34 56, 46 58, 54 62 C 40 66, 16 66, 4 52 Z" fill="#16323A"/>
+    <path d="M58 58 C 60 66, 60 74, 56 80 L64 80 C 66 72, 66 64, 64 56 Z" fill="#D42E2E"/>
+    <path d="M86 60 C 90 68, 92 76, 90 82 L98 82 C 100 74, 98 64, 94 58 Z" fill="#D42E2E"/>
+    <path d="M52 46 C 60 36, 74 34, 88 40 C 100 45, 104 58, 96 66 C 84 72, 66 70, 56 62 C 50 58, 48 52, 52 46 Z" fill="#D42E2E"/>
+    <path d="M86 34 C 96 30, 108 34, 110 44 C 111 52, 104 58, 96 58 C 88 58, 82 52, 82 45 C 82 40, 83 36, 86 34 Z" fill="#D42E2E"/>
+    <path d="M88 34 L86 22 L96 30 Z" fill="#D42E2E"/><path d="M101 32 L106 22 L108 34 Z" fill="#D42E2E"/>
+    <path d="M89 32 L88 26 L94 31 Z" fill="#F2913C"/>
+    <path d="M104 46 C 112 44, 118 48, 116 55 C 112 60, 104 58, 102 52 Z" fill="#F2913C"/>
+    <path d="M60 54 C 66 50, 74 50, 80 54 C 74 60, 66 60, 60 54 Z" fill="#F2913C"/>
+    <circle cx="97" cy="44" r="2.8" fill="#16323A"/>
+  </symbol>
+</svg>
+</body>
+</html>
