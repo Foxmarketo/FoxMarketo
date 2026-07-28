@@ -186,13 +186,3 @@ export default function TrackedForm({ source = "landing" }) {
     </form>
   );
 }
-// Add lead to Brevo (fire-and-forget; won't block the user)
-try {
-  await fetch("/api/brevo-subscribe", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ email, name }),
-  });
-} catch (e) {
-  console.error("Brevo subscribe failed:", e);
-}
