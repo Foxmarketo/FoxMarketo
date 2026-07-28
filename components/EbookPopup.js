@@ -47,6 +47,16 @@ export default function EbookPopup() {
     data.append("from_name", "Fox Marketo Popup");
     data.append("email", email);
     data.append("coupon_code", COUPON);
+    // Web3Forms autoresponder: emails the VISITOR automatically.
+    // Requires enabling "Autoresponder" once in your Web3Forms dashboard.
+    data.append(
+      "autoresponder_subject",
+      "Your Fox Marketo ebook + 10% coupon (FOX10)"
+    );
+    data.append(
+      "autoresponder_message",
+      `Hi,\n\nThanks for grabbing our free growth ebook! Here it is: https://foxmarketo.com/fox-marketo-ebook.pdf\n\nAs promised, here's your exclusive discount code: ${COUPON}\nShare this code when you sign a contract to claim an extra 10% off your first engagement.\n\nWant to talk? Book a free call: https://foxmarketo.com/contact\nWhatsApp: +92 317 792 8052\n\nWhere cunning meets the market,\nThe Fox Marketo Team`
+    );
     data.append(
       "message",
       `New lead captured the ebook popup.\nEmail: ${email}\nCoupon issued: ${COUPON} (10% off on contract).`

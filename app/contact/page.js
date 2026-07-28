@@ -8,7 +8,7 @@ import { SITE } from "@/lib/site";
 export const metadata = {
   title: "Contact",
   description:
-    "Get in touch with Fox Marketo for a free consultation. WhatsApp us in the USA, UAE, KSA, or Pakistan, we serve clients worldwide.",
+    "Get in touch with Fox Marketo for a free consultation. WhatsApp us anytime. We serve clients across the US, Europe, Middle East, Pakistan, and worldwide.",
 };
 
 export default function Contact() {
@@ -52,7 +52,7 @@ export default function Contact() {
                   <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-teal/10 text-teal"><Globe size={20} /></span>
                   <div>
                     <p className="font-display text-sm font-700 text-ink">Serving</p>
-                    <p className="text-sm text-slate-500">UAE · KSA · Pakistan · Worldwide</p>
+                    <p className="text-sm text-slate-500">US · Europe · Middle East · Pakistan · Worldwide</p>
                   </div>
                 </div>
 

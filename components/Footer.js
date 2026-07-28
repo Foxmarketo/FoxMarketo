@@ -53,8 +53,8 @@ export default function Footer() {
           <h4 className="font-display text-base font-700">Get in Touch</h4>
           <ul className="mt-4 space-y-3 text-sm text-mist/90">
             <li className="flex items-start gap-2.5"><Mail size={17} className="mt-0.5 shrink-0" /><a href={`mailto:${SITE.email}`} className="break-all hover:text-fox-orange">{SITE.email}</a></li>
-            <li className="flex items-start gap-2.5"><Phone size={17} className="mt-0.5 shrink-0" /><span>{SITE.phones[0].label} (USA)</span></li>
-            <li className="flex items-start gap-2.5"><MapPin size={17} className="mt-0.5 shrink-0" /><span>Serving UAE · KSA · Pakistan · Worldwide</span></li>
+            <li className="flex items-start gap-2.5"><Phone size={17} className="mt-0.5 shrink-0" /><span>{SITE.phones[0].label}</span></li>
+            <li className="flex items-start gap-2.5"><MapPin size={17} className="mt-0.5 shrink-0" /><span>Serving US · Europe · Middle East · Pakistan · Worldwide</span></li>
           </ul>
         </div>
       </div>

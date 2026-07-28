@@ -101,6 +101,13 @@ export default function TrackedForm({ source = "landing" }) {
     data.append("subject", `New lead from ${source}, foxmarketo.com`);
     data.append("from_name", "Fox Marketo Website");
     data.append("lead_source", source);
+    // Web3Forms autoresponder: sends the visitor a confirmation automatically.
+    // Requires enabling "Autoresponder" once in your Web3Forms dashboard.
+    data.append("autoresponder_subject", "We received your message, Fox Marketo");
+    data.append(
+      "autoresponder_message",
+      "Hi,\n\nThanks for reaching out to Fox Marketo! We've received your message and will get back to you within one business day.\n\nNeed something urgent? WhatsApp us at +92 317 792 8052 or book a free call at https://foxmarketo.com/contact\n\nWhere cunning meets the market,\nThe Fox Marketo Team"
+    );
 
     try {
       const res = await fetch("https://api.web3forms.com/submit", { method: "POST", body: data });
