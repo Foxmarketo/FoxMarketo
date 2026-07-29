@@ -51,6 +51,48 @@ export default function Services() {
         </div>
       </section>
 
+      {/* FACEBOOK MONETIZATION */}
+      <section className="section">
+        <div className="mx-auto grid max-w-6xl items-center gap-12 md:grid-cols-2">
+          <Reveal>
+            <SectionHeading eyebrow="Monetization Services" title="Facebook Monetization" highlight="Specialists" />
+            <p className="mt-5 text-slate-500">
+              We help businesses, publishers, content creators, and digital media brands
+              monetize their Facebook pages using proven, platform-compliant strategies.
+              We specialize in enabling and optimizing Facebook monetization, resolving
+              monetization and payout issues, recovering restricted pages, and maximizing
+              revenue through Content Monetization programs.
+            </p>
+            <p className="mt-4 text-slate-500">
+              With extensive hands-on experience managing large-scale Facebook pages, we've
+              helped numerous clients achieve monetization, increase earnings, and maintain
+              long-term compliance with Meta's policies. Our focus is sustainable growth
+              through content optimization, audience development, policy compliance, and
+              data-driven monetization strategies that maximize long-term revenue.
+            </p>
+          </Reveal>
+          <Reveal delay={0.15}>
+            <div className="rounded-3xl bg-gradient-to-br from-teal to-teal-deep p-8 text-white shadow-xl">
+              <h3 className="font-display text-xl font-800">What We Handle</h3>
+              <ul className="mt-5 space-y-3">
+                {[
+                  "Enable & optimize Facebook monetization",
+                  "Resolve monetization & payout issues",
+                  "Recover restricted or ineligible pages",
+                  "Maximize Content Monetization revenue",
+                  "Long-term Meta policy compliance",
+                ].map((t) => (
+                  <li key={t} className="flex items-start gap-2.5">
+                    <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-fox-orange text-white"><Check size={12} /></span>
+                    <span className="text-mist/95">{t}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
       <section className="section bg-slate-50/70">
         <div className="mx-auto grid max-w-6xl items-center gap-12 md:grid-cols-2">
           <Reveal>
