@@ -60,6 +60,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${poppins.variable} ${inter.variable}`}>
+      <head>
+        {/* Warm up the connection to Tidio so the chat widget loads faster */}
+        <link rel="preconnect" href="https://code.tidio.co" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://widget-v4.tidiochat.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://code.tidio.co" />
+        <link rel="dns-prefetch" href="https://widget-v4.tidiochat.com" />
+      </head>
       <body>
         <Navbar />
         <main>{children}</main>
