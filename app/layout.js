@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import Analytics from "@/components/Analytics";
 import EbookPopup from "@/components/EbookPopup";
+import TidioChat from "@/components/TidioChat";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -66,6 +67,7 @@ export default function RootLayout({ children }) {
         <WhatsAppButton />
         <EbookPopup />
         <Analytics />
+        <TidioChat />
       </body>
     </html>
   );
