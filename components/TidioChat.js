@@ -11,8 +11,8 @@ export default function TidioChat() {
   if (!SITE.tidioKey) return null;
   return (
     <Script
-      src={`//code.tidio.co/${SITE.tidioKey}.js`}
-      strategy="lazyOnload"
+      src={`https://code.tidio.co/${SITE.tidioKey}.js`}
+      strategy="afterInteractive"
     />
   );
 }
